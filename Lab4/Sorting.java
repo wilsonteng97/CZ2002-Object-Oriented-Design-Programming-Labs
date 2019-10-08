@@ -3,6 +3,7 @@ public class Sorting
 	//-----------------------------------------------------------------
 	// Sorts the specified array of objects using the selection
 	// sort algorithm.
+	// Comparable Interface -> https://docs.oracle.com/javase/7/docs/api/
 	//-----------------------------------------------------------------
 	public static void selectionSort (Comparable[] list)
 	{
