@@ -21,7 +21,7 @@ public class PlaneSeat {
 		return customerId;
 	}
 	
-	public boolean isOcuppied() {
+	public boolean isOccupied() {
 		return assigned;
 	}
 	

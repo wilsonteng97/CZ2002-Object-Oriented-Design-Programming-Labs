@@ -9,7 +9,7 @@ public class lab2p1 {
 		
 		do {
 			System.out.println("Perform the following methods:");
-			System.out.println("1: miltiplication test");
+			System.out.println("1: multiplication test");
 			System.out.println("2: quotient using division by subtraction");
 			System.out.println("3: remainder using division by subtraction");
 			System.out.println("4: count the number of digits");
@@ -25,7 +25,6 @@ public class lab2p1 {
 				case 1: /* add mulTest() call */
 					mulTest(); break;
 				case 2: /* add divide() call */
-					
 					System.out.print("m = ");
 					m = sc.nextInt();
 					System.out.print("n = ");
@@ -63,28 +62,27 @@ public class lab2p1 {
 							System.out.println("oddDigits = Error input!!");
 					} while (n_long<0);
 					ans_long = extractOddDigits(n_long); 
-					System.out.println("n : " + n_long + "- oddDigits = " + ans_long + "\n"); break;
+					System.out.println("n : " + n_long + " - oddDigits = " + ans_long + "\n"); break;
 				case 7: System.out.println("Program terminating ….");
 			}
 		} while (choice < 7);
-		sc.close();
 	}
+	
 	/* add method code here */
 	public static void mulTest() {
 		int correct=0, no1, no2, answer;
-
+		Scanner in = new Scanner(System.in);
+		
 		for (int i=0;i<5;i++) {
 			no1 = (int)(Math.random() * 9 + 1);
 			no2 = (int)(Math.random() * 9 + 1);
 			
 			System.out.print("How much is " + no1 + " times " + no2 + "? ");
-			Scanner in = new Scanner(System.in);
 			answer = in.nextInt();
-			if (answer==no1*no2)
+			if (answer==no1*no2) {
 				correct+=1;
-			in.close();
+			}
 		}
-		
 		System.out.println("........");
 		System.out.println(correct + " answers out of 5 correct.\n");
 	}
