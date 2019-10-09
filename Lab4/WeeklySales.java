@@ -19,9 +19,9 @@ public class WeeklySales
 		salesStaff[8] = new SalePerson("Jim", "Doe", 2850);
 		salesStaff[9] = new SalePerson("Walt", "Smith", 3000);
 
-		Sorting.insertionSort(salesStaff);
+		Sorting.insertionSortBigToSmall(salesStaff);
 
-		System.out.println ("\nRanking of Sales for the Week\n");
+		System.out.println("\nRanking of Sales for the Week\n");
 
 		for (SalePerson s : salesStaff)
 			System.out.println (s);
